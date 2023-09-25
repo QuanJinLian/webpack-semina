@@ -1,0 +1,450 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\quanj\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.8\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header undefined" id="%EA%B8%B0%ED%83%80-%EB%94%94%ED%85%8C%EC%9D%BC-%EC%84%A4%EC%A0%95">&#xAE30;&#xD0C0; &#xB514;&#xD14C;&#xC77C; &#xC124;&#xC815;</h1>
+
+
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#context" class="md-toc-link">
+            <p>context</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#output" class="md-toc-link"><p>output</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#library" class="md-toc-link">
+            <p>library</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#librarytarget" class="md-toc-link">
+            <p>libraryTarget</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#target" class="md-toc-link">
+            <p>target</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#modulenoparse" class="md-toc-link">
+            <p>module.noParse</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#resolve" class="md-toc-link"><p>resolve</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#modules" class="md-toc-link">
+            <p>modules</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#extensions" class="md-toc-link">
+            <p>extensions</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#alias" class="md-toc-link">
+            <p>alias</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#externals" class="md-toc-link">
+            <p>externals</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#stats" class="md-toc-link">
+            <p>stats</p>
+
+          </a></div>
+</div>
+<h2 class="mume-header" id="context">context</h2>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">context<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token method function property-access">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>&#xC774; &#xAD6C;&#xC131;&#xC740; entry &#xBC0F; loaders&#xC758; &#xBD84;&#xC11D;&#xC5D0; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xBA70;, entry &#xBC0F; loaders&#xC758; &#xC0C1;&#xB300; &#xACBD;&#xB85C;&#xB294; context &#xC124;&#xC815;&#xC744; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD558;&#xBBC0;&#xB85C; &#xAD6C;&#xC131;&#xC774; CWD(current working directory )&#xC640; &#xB3C5;&#xB9BD;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h2 class="mume-header" id="output">output</h2>
+
+<h3 class="mume-header" id="library">library</h3>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">library<span class="token operator">:</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">;</span>
+</pre><p>&#xC774;&#xB807;&#xAC8C; &#xD558;&#xBA74; &#xD328;&#xD0A4;&#xC9C0; &#xACB0;&#xACFC;&#xC5D0;&#xC11C; &#xC790;&#xCCB4; &#xC2E4;&#xD589; &#xD568;&#xC218;&#xC758; &#xACB0;&#xACFC;&#xB97C; abc&#xC5D0; &#xB178;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 class="mume-header" id="librarytarget">libraryTarget</h3>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">libraryTarget<span class="token operator">:</span> <span class="token string">&quot;var&quot;</span><span class="token punctuation">;</span>
+</pre><p>&#xC774; &#xC124;&#xC815;&#xC740; &#xD328;&#xD0A4;&#xC9C0;&#xC758; export&#xD55C; &#xACB0;&#xACFC;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xB294; &#xBC29;&#xC2DD;&#xC744; &#xBCF4;&#xB2E4; &#xC138;&#xBC00;&#xD558;&#xAC8C; &#xC81C;&#xC5B4;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD55C; &#xB2E4;&#xB978; &#xAC12;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>var: &#xAE30;&#xBCF8;&#xAC12;&#xC73C;&#xB85C;, &#xC77C;&#xBC18; &#xBCC0;&#xC218;&#xB85C; &#xB178;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;.</li>
+<li>window: window&#xC758; &#xC18D;&#xC131;&#xC73C;&#xB85C; &#xB178;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>this: &#xC18D;&#xC131;&#xC744; this&#xC5D0; &#xB178;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>global: global&#xC5D0; &#xC18D;&#xC131;&#xC744; &#xB178;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>commonjs: exports&#xC5D0; &#xC18D;&#xC131;&#xC744; &#xB178;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>&#xAE30;&#xD0C0;: <a href="https://webpack.js.org/configuration/output/#outputlibrarytarget">https://webpack.js.org/configuration/output/#outputlibrarytarget</a></li>
+</ul>
+<h2 class="mume-header" id="target">target</h2>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">target<span class="token operator">:</span> <span class="token string">&quot;web&quot;</span><span class="token punctuation">;</span> <span class="token comment">// &#xAE30;&#xBCF8; &#xAC12;</span>
+</pre><p>&#xD328;&#xD0A4;&#xC9D5;&#xB41C; &#xACB0;&#xACFC; &#xCF54;&#xB4DC;&#xAC00; &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xC2E4;&#xD589;&#xB420; &#xD658;&#xACBD;&#xC744; &#xC124;&#xC815;&#xD558;&#xBA70;, &#xC77C;&#xBC18;&#xC801;&#xC778; &#xAC12;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>web: &#xD328;&#xD0A4;&#xC9D5;&#xB41C; &#xCF54;&#xB4DC;&#xAC00; &#xC6F9; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xC2E4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC;: &#xD328;&#xD0A4;&#xC9D5;&#xB41C; &#xCF54;&#xB4DC;&#xAC00; &#xB178;&#xB4DC; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xC2E4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.</li>
+<li>&#xAE30;&#xD0C0;: <a href="https://webpack.js.org/configuration/target/">https://webpack.js.org/configuration/target/</a></li>
+</ul>
+<h2 class="mume-header" id="modulenoparse">module.noParse</h2>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">noParse<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">jquery</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+</pre><p>&#xD574;&#xB2F9; &#xC815;&#xADDC;&#xC2DD;&#xACFC; &#xC77C;&#xCE58;&#xD558;&#xB294; &#xBAA8;&#xB4C8; &#xAD6C;&#xBB38;&#xC744; &#xBD84;&#xC11D;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA70;, <strong>&#xBE4C;&#xB4DC; &#xC131;&#xB2A5;</strong>&#xC744; &#xAC1C;&#xC120;&#xD558;&#xAE30; &#xC704;&#xD574; &#xB300;&#xADDC;&#xBAA8; &#xB2E8;&#xC77C; &#xBAA8;&#xB4C8; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xBB34;&#xC2DC;&#xD558;&#xB294; &#xB370; &#xC790;&#xC8FC; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h2 class="mume-header" id="resolve">resolve</h2>
+
+<p>resolve &#xC124;&#xC815;&#xC740; &#xC8FC;&#xB85C; &#xBAA8;&#xB4C8; &#xAD6C;&#xBB38; &#xBD84;&#xC11D; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xB97C; &#xC81C;&#xC5B4;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 class="mume-header" id="modules">modules</h3>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">modules<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;node_modules&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// &#xAE30;&#xBCF8; &#xAC12;</span>
+</pre><p>&#xBAA8;&#xB4C8;&#xC744; &#xAD6C;&#xBB38; &#xBD84;&#xC11D;&#xD560; &#xB54C; <code>require(&quot;test&quot;)</code>&#xB77C;&#xB294; import &#xBB38;&#xC774; &#xBC1C;&#xACAC;&#xD558;&#xBA74; webpack&#xC740; &#xB2E4;&#xC74C; &#xC704;&#xCE58;&#xC5D0;&#xC11C; &#xC885;&#xC18D; &#xBAA8;&#xB4C8;&#xC744; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li>&#xD604;&#xC7AC; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC758; <code>node_modules</code> &#xB514;&#xB809;&#xD1A0;&#xB9AC;</li>
+<li>&#xC0C1;&#xC704; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC758; <code>node_modules</code> &#xB514;&#xB809;&#xD1A0;&#xB9AC;</li>
+<li>...</li>
+</ol>
+<h3 class="mume-header" id="extensions">extensions</h3>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// &#xAE30;&#xBCF8; &#xAC12;</span>
+</pre><p>&#xBAA8;&#xB4C8;&#xC744; &#xAD6C;&#xBB38; &#xBD84;&#xC11D;&#xD560; &#xB54C; <code>require(&quot;test&quot;)</code>&#xC640; &#xAC19;&#xC740; &#xD2B9;&#xC815; &#xC811;&#xBBF8;&#xC0AC;&#xAC00; &#xC5C6;&#xB294; import &#xBB38;&#xC744; &#xB9CC;&#xB098;&#xBA74; &#xD574;&#xB2F9; &#xC811;&#xBBF8;&#xC0AC; &#xC774;&#xB984;&#xC744; &#xCC28;&#xB840;&#xB85C; &#xD14C;&#xC2A4;&#xD2B8;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>test.js</li>
+<li>test.json</li>
+</ul>
+<h3 class="mume-header" id="alias">alias</h3>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;@&quot;</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token method function property-access">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&apos;src&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;_&quot;</span><span class="token operator">:</span> __dirname
+<span class="token punctuation">}</span>
+</pre><p>alias&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC124;&#xC815;&#xC758; &#xD0A4; &#xC774;&#xB984;&#xC744; import &#xBB38;&#xC5D0; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;(&#xC608;: <code>require(&quot;@/abc.js&quot;)</code>). &#xADF8;&#xB7EC;&#xBA74; webpack&#xC740; <code>require(&#xC808;&#xB300; &#xACBD;&#xB85C;&#xC758; src + &quot;/abc.js&quot;)</code>&#xB85C; &#xCC98;&#xB9AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC18C;&#xC2A4; &#xCF54;&#xB4DC; &#xAD6C;&#xC870;&#xAC00; &#xAE4A;&#xACE0; &#xBCF5;&#xC7A1;&#xD55C; &#xB300;&#xADDC;&#xBAA8; &#xC2DC;&#xC2A4;&#xD15C;&#xC5D0;&#xC11C; alias&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC885;&#xC18D;&#xC131;&#xC744; &#xB354; &#xC27D;&#xAC8C; &#xAC00;&#xC838;&#xC62C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 class="mume-header" id="externals">externals</h2>
+
+<pre data-role="codeBlock" data-info="js" class="language-javascript">externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    jquery<span class="token operator">:</span> <span class="token string">&quot;$&quot;</span><span class="token punctuation">,</span>
+    lodash<span class="token operator">:</span> <span class="token string">&quot;_&quot;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#xC124;&#xC815;&#xB41C; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC;&#xB97C; &#xCD5C;&#xC885; &#xBC88;&#xB4E4;&#xC5D0;&#xC11C; &#xC81C;&#xC678;&#xD569;&#xB2C8;&#xB2E4;.<br>
+&#xC608;: entry &#xBAA8;&#xB4C8;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token comment">//index.js</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;jquery&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;lodash&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>&#xC0DD;&#xC131;&#xB41C; bundle &#xC740;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token punctuation">(</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token spread operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;./src/index.js&quot;</span><span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">module<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> __webpack_require__</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token string">&quot;jquery&quot;</span><span class="token punctuation">)</span>
+        <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token string">&quot;lodash&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jquery&quot;</span><span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">module<span class="token punctuation">,</span> exports</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//jquery&#xC758; &#xB300;&#xB7C9; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;lodash&quot;</span><span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">module<span class="token punctuation">,</span> exports</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//lodash&#xC758; &#xB300;&#xB7C9; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</pre><p>&#xD558;&#xC9C0;&#xB9CC; &#xC704;&#xC758; externals &#xC124;&#xC815;&#xC774; &#xC788;&#xC73C;&#xBA74; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token punctuation">(</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token spread operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;./src/index.js&quot;</span><span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">module<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> __webpack_require__</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token string">&quot;jquery&quot;</span><span class="token punctuation">)</span>
+        <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token string">&quot;lodash&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jquery&quot;</span><span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">module<span class="token punctuation">,</span> exports</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        module<span class="token punctuation">.</span><span class="token property-access">exports</span> <span class="token operator">=</span> $<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;lodash&quot;</span><span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">module<span class="token punctuation">,</span> exports</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        module<span class="token punctuation">.</span><span class="token property-access">exports</span> <span class="token operator">=</span> _<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</pre><p>&#xC774;&#xB294; &#xD0C0;&#xC0AC; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xC678;&#xBD80; CDN&#xC5D0;&#xC11C; &#xC18C;&#xC2F1;&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xC5D0; &#xB354; &#xC801;&#xD569;&#xD558;&#xBBC0;&#xB85C; &#xD398;&#xC774;&#xC9C0;&#xC5D0;&#xC11C; CDN&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xACE0; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC;&#xC5D0; &#xC601;&#xD5A5;&#xC744; &#xC8FC;&#xC9C0; &#xC54A;&#xACE0; &#xBC88;&#xB4E4;&#xC744; &#xB354; &#xC791;&#xAC8C; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 class="mume-header" id="stats">stats</h2>
+
+<p>stats&#xB294; &#xBE4C;&#xB4DC; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC911; &#xCF58;&#xC194;&#xC758; &#xCD9C;&#xB825;&#xC744; &#xC81C;&#xC5B4;&#xD569;&#xB2C8;&#xB2E4;.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

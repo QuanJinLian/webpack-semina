@@ -1,0 +1,8 @@
+node_modules 
+bin
+*.log
+/.idea
+.vscode
+*.css.map
+*.scssc
+.DS_Store
